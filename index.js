@@ -43,20 +43,19 @@ const questions = [
 function createTemplate(data) {
     console.log(data);
     var template = 
-        `
-        #${data.projecttitle}
-        ##${data.email}
-        ##${data.github}
-        ##${data.projectdescription}
+`# ${data.projecttitle}
+## ${data.email}
+## ${data.github}
+## ${data.projectdescription}
     `
-    return template // the template finished
+    return template
 }
 
 // define a function to write README file
 function writeToFile(fileName, data) {
 
     console.log(fileName, data, process.cwd());
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
+    return fs.writeFileSync(path.join(process.cwd(), "/dist", fileName), data)
 
 }
 
