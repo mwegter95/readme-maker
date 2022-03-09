@@ -5,6 +5,9 @@ Hello, person who wants a nice README.md file for their github repo! This app wo
 
 I, [mwegter95](github.com/mwegter95), coded this app using javascript and a package called inquirer.
 
+## Demonstration Video
+[https://drive.google.com/file/d/1_C4bu687cjHVLRvtQIiwpt0pzq8ymCkb/view](https://drive.google.com/file/d/1_C4bu687cjHVLRvtQIiwpt0pzq8ymCkb/view)
+
 
 This app was built using starter code from University of Minnesota Full Stack Flex Bootcamp. Check out the starter repo here <a src="https://github.com/coding-boot-camp/potential-enigma" target="_blank">https://github.com/coding-boot-camp/potential-enigma</a>
 
