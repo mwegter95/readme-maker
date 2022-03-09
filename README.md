@@ -3,7 +3,6 @@
 
 Hello, person who wants a nice README.md file for their github repo! This app works in your command line to ask you questions about your project based on what makes the perfect README, and then automatically generates one for you with sections and formatting.
 
-I, [mwegter95](github.com/mwegter95), coded this app using javascript and a package called inquirer.
 
 ## Demonstration Video
 [https://drive.google.com/file/d/1_C4bu687cjHVLRvtQIiwpt0pzq8ymCkb/view](https://drive.google.com/file/d/1_C4bu687cjHVLRvtQIiwpt0pzq8ymCkb/view)
