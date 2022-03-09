@@ -55,7 +55,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license does the project use?',
-        choices: ["MIT", "Apache License 2.0", "GNU GPLv3", "none"]
+        choices: ["MIT", "Apache License 2.0", "GNU_GPLv3", "none"]
     },
     {
         type: 'input',
@@ -92,7 +92,7 @@ const questions = [
         }
 
     },
-    
+
 
     
     
@@ -125,7 +125,7 @@ function writeToFile(fileName, data) {
 // define a function to initialize app
 function init() {
     return inquirer.prompt(questions)
-    .then(answers => writeToFile("README.md", createTemplate(answers)))
+    .then(answers => writeToFile("README.md", generateMarkdown(answers)))
 };
 
 // call the function to initialize app
