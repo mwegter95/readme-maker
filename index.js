@@ -23,7 +23,7 @@ const questions = [
         {
         type: 'input',
         name: 'projectdescription',
-        message: 'Please provide text for a description section for your project'
+        message: 'Please provide text for a description section for your project. This can be long (paragraphs), or short.'
     },
     {
         type: 'input',
@@ -55,7 +55,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license does the project use?',
-        choices: ["MIT", "Apache License 2.0", "GNU_GPLv3", "none"]
+        choices: ["MIT", "Apache License 2.0", "GNU GPLv3", "none"]
     },
     {
         type: 'input',
@@ -89,15 +89,32 @@ const questions = [
             } else {
                 return false;
             }
-        }
+        },
 
     },
+    {
+        type: 'confirm',
+        name: 'featuresConfirm',
+        message: 'Does your app have a lot of features you would like to provide some details on?',
+        default: false
+    },
+    {
+        type: 'input',
+        name: 'features',
+        message: 'Provide details on your features, with period characters at the end of each feature description, like this: Feature description one. Feature description two. etc',
+        when: ({ featuresConfirm }) => {
+            if (featuresConfirm) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
 
 
     
     
-    //install instructions
-    //features
+    //deployed link
     //
 ];
 
